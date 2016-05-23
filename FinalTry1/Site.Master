@@ -11,10 +11,7 @@
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
 
-      <!-- javascript section -->
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/jquery-2.2.3.min.js"></script>
-        <script src="Scripts/app.js"></script>
+    
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -47,7 +44,10 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-
+      <!-- javascript section -->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+        <script src="Scripts/app.js"></script>
   
 </body>
 </html>
