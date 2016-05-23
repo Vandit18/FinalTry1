@@ -15,23 +15,23 @@ namespace FinalTry1
     public class UnlockingPrice
     {
         public string modelName { get; set; }
-        public string rogersPrice { get; set; }
-        public string bellPrice { get; set; }
-        public string telusPrice { get; set; }
-        public string fidoPrice { get; set; }
-        public string koodoPrice { get; set; }
-        public string virginPrice { get; set; }
-        public string windPrice { get; set; }
-        public string otherPrice { get; set; }
+        public string Rogers { get; set; }
+        public string Bell { get; set; }
+        public string Telus { get; set; }
+        public string Fido { get; set; }
+        public string Koodo { get; set; }
+        public string Virgin { get; set; }
+        public string Wind { get; set; }
+        public string Other { get; set; }
     }
     public class OtterBoxSales
     {
             public int ID { get; set; }
         public string OtterBoxModel{get;set;}
-        public string ModelType { get; set; }
-        public string modelColor { get; set; }
-        public int ModelInStock { get; set; }
-        public int ModelSold { get; set; }
+        public string Type { get; set; }
+        public string Color { get; set; }
+        public int InStock { get; set; }
+        public int Sold { get; set; }
         public int ModelStock { get; set; }
 
     }

@@ -18,10 +18,10 @@ namespace FinalTry1
                 MySqlCommand cmand = new MySqlCommand(query, cn);
                 cmand.Parameters.Add("@Id", MySqlDbType.Decimal).Value = sale.ID;
                 cmand.Parameters.Add("@ModelName", MySqlDbType.VarChar).Value = sale.OtterBoxModel;
-                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.ModelType;
-                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.modelColor;
-                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.ModelInStock;
-                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.ModelSold;
+                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.Type;
+                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.Color;
+                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.InStock;
+                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.Sold;
                 cmand.Parameters.Add("@ModelCurrentStock", MySqlDbType.Decimal).Value = sale.ModelStock;
                 cn.Open();
                 return cmand.ExecuteNonQuery();
@@ -37,10 +37,10 @@ namespace FinalTry1
                 MySqlCommand cmand = new MySqlCommand(query, cn);
                 cmand.Parameters.Add("@Id", MySqlDbType.Decimal).Value = sale.ID;
                 cmand.Parameters.Add("@ModelName", MySqlDbType.VarChar).Value = sale.OtterBoxModel;
-                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.ModelType;
-                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.modelColor;
-                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.ModelInStock;
-                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.ModelSold;
+                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.Type;
+                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.Color;
+                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.InStock;
+                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.Sold;
                 cmand.Parameters.Add("@ModelCurrentStock", MySqlDbType.Decimal).Value = sale.ModelStock;
                 cn.Open();
                 return cmand.ExecuteNonQuery();
@@ -56,10 +56,10 @@ namespace FinalTry1
                 MySqlCommand cmand = new MySqlCommand(query, cn);
                 cmand.Parameters.Add("@Id", MySqlDbType.Decimal).Value = sale.ID;
                 cmand.Parameters.Add("@ModelName", MySqlDbType.VarChar).Value = sale.OtterBoxModel;
-                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.ModelType;
-                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.modelColor;
-                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.ModelInStock;
-                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.ModelSold;
+                cmand.Parameters.Add("@ModelType", MySqlDbType.VarChar).Value = sale.Type;
+                cmand.Parameters.Add("@ModelColor", MySqlDbType.VarChar).Value = sale.Color;
+                cmand.Parameters.Add("@ModelInStock", MySqlDbType.Decimal).Value = sale.InStock;
+                cmand.Parameters.Add("@ModelSold", MySqlDbType.Decimal).Value = sale.Sold;
                 cmand.Parameters.Add("@ModelCurrentStock", MySqlDbType.Decimal).Value = sale.ModelStock;
                 cn.Open();
                 return cmand.ExecuteNonQuery();
@@ -77,7 +77,7 @@ namespace FinalTry1
                 MySqlDataReader reader = cmand.ExecuteReader();
                 while (reader.Read())
                 {
-                    OtterBoxSalesHistory.Add(new OtterBoxSales { ID = int.Parse(reader["Id"].ToString()), OtterBoxModel = reader["ModelName"].ToString(), ModelType = reader["ModelType"].ToString(), modelColor = reader["ModelColor"].ToString(), ModelInStock =int.Parse(reader["ModelInStock"].ToString()), ModelSold=int.Parse(reader["ModelSold"].ToString()),ModelStock=int.Parse( reader["ModelCurrentStock"].ToString()) });
+                    OtterBoxSalesHistory.Add(new OtterBoxSales { ID = int.Parse(reader["Id"].ToString()), OtterBoxModel = reader["ModelName"].ToString(), Type = reader["ModelType"].ToString(), Color = reader["ModelColor"].ToString(), InStock =int.Parse(reader["ModelInStock"].ToString()), Sold=int.Parse(reader["ModelSold"].ToString()),ModelStock=int.Parse( reader["ModelCurrentStock"].ToString()) });
                 }
 
                 return OtterBoxSalesHistory;

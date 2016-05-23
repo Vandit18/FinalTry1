@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="FinalTry1.WebForm3" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div>
+    <div>
     <h1>
         OtterBoxSalesHistory
     </h1>

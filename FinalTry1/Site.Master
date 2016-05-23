@@ -31,9 +31,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
         <li class="active">
-            <a href="WebForm2.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-       <li><a href="WebForm1.aspx"><i class="fa fa-th fa-lg"></i> Product</a></li>
-                <li><a href="WebForm3.aspx"><i class="fa fa-gear fa-lg"></i> Service</a></li>
+            <a href="WebForm1.aspx"><i class="glyphicon glyphicon-wrench"></i> UnlockingPrice</a></li>
+       <li><a href="WebForm3.aspx"><i class="glyphicon glyphicon-inbox"></i> OtterBox</a></li>
+                <li><a href="WebFor2.aspx"><i class="fa fa-gear fa-lg"></i> Service</a></li>
                 <li><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
                 <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>
