@@ -12,10 +12,10 @@
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="ID" HeaderText="ID" SortExpression="ID" />
             <asp:BoundField DataField="OtterBoxModel" HeaderText="OtterBoxModel" SortExpression="OtterBoxModel" />
-            <asp:BoundField DataField="ModelType" HeaderText="ModelType" SortExpression="ModelType" />
-            <asp:BoundField DataField="modelColor" HeaderText="modelColor" SortExpression="modelColor" />
-            <asp:BoundField DataField="ModelInStock" HeaderText="ModelInStock" SortExpression="ModelInStock" />
-            <asp:BoundField DataField="ModelSold" HeaderText="ModelSold" SortExpression="ModelSold" />
+            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+            <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
+            <asp:BoundField DataField="InStock" HeaderText="InStock" SortExpression="InStock" />
+            <asp:BoundField DataField="Sold" HeaderText="Sold" SortExpression="Sold" />
             <asp:BoundField DataField="ModelStock" HeaderText="ModelStock" SortExpression="ModelStock" />
         </Columns>
         <FooterStyle BackColor="#CCCC99" />
