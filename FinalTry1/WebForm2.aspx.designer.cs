@@ -10,7 +10,7 @@
 namespace FinalTry1 {
     
     
-    public partial class WebForm1 {
+    public partial class WebForm2 {
         
         /// <summary>
         /// ObjectDataSource1 control.
