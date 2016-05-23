@@ -17,6 +17,11 @@
             <asp:BoundField DataField="InStock" HeaderText="InStock" SortExpression="InStock" />
             <asp:BoundField DataField="Sold" HeaderText="Sold" SortExpression="Sold" />
             <asp:BoundField DataField="ModelStock" HeaderText="ModelStock" SortExpression="ModelStock" />
+            <asp:TemplateField>
+              <FooterTemplate>
+               <asp:LinkButton ID="LkB1" runat="server" CommandName="Select">Insert</asp:LinkButton>
+              </FooterTemplate>
+           </asp:TemplateField>
         </Columns>
         <FooterStyle BackColor="#CCCC99" />
         <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
