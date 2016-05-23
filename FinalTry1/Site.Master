@@ -14,13 +14,13 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <nav class="navbar navbar-inverse">
+    <%-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"><link href="WebForm1.aspx" rel="stylesheet"/></span>
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
@@ -28,17 +28,43 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
         <li class="active">
-            <a href="WebForm1.aspx"><i class="glyphicon glyphicon-wrench"></i> UnlockingPrice</a></li>
-       <li><a href="WebForm3.aspx"><i class="glyphicon glyphicon-inbox"></i> OtterBox</a></li>
-                <li><a href="WebFor2.aspx"><i class="fa fa-gear fa-lg"></i> Service</a></li>
-                <li><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
-                <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
+            <a href=""><i class="glyphicon glyphicon-wrench"></i> UnlockingPrice</a></li>
+       <li><a href=""><i class="glyphicon glyphicon-inbox"></i> OtterBox</a></li>
+                <li><a href=""><i class="fa fa-gear fa-lg"></i> Service</a></li>
+                <li><a href=""><i class="fa fa-info fa-lg"></i> About Us</a></li>
+                <li><a href=""><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+</nav>--%>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="">WebForm1</a>
+                </li>
+                <li><a href="">WebForm2</a>
+                </li>
+                <li><a href="">WebForm3</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
     <form id="form1" runat="server">
     <div>
