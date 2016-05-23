@@ -13,5 +13,11 @@ namespace FinalTry1
         {
 
         }
+        protected void AddNewRecord(object sender, EventArgs e)
+        {
+            GridView1.ShowFooter = true;
+            
+        }
+
     }
 }

@@ -8,7 +8,7 @@
     <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="FinalTry1.UnlockingPrice" DeleteMethod="DeleteProduct" InsertMethod="AddProduct" SelectMethod="getProducts" TypeName="FinalTry1.UnlockingPriceClass" UpdateMethod="UpdateProduct"></asp:ObjectDataSource>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataSourceID="ObjectDataSource1" PageSize="5" Width="791px" AutoGenerateColumns="False">
         <Columns>
-            <asp:CommandField ShowEditButton="True" />
+            <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
             <asp:BoundField DataField="modelName" HeaderText="modelName" SortExpression="modelName" />
             <asp:BoundField DataField="Rogers" HeaderText="Rogers" SortExpression="Rogers" />
             <asp:BoundField DataField="Bell" HeaderText="Bell" SortExpression="Bell" />
