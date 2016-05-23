@@ -9,7 +9,7 @@ namespace FinalTry1
 {
     public class UnlockingPriceClass
     {
-        String ConneStr = "Data source=sql.computerstudi.es;Database=gc200299657;User Id=gc200299657;Password=p4^AJCpe";
+        String ConneStr = "Data source=sql.computerstudi.es;Database=gc200299657;User Id=gc200299657;Password=p4^AJCpe;Port=3306";
         public Int32 AddProduct(UnlockingPrice up)
         {
             using (MySqlConnection cn = new MySqlConnection(ConneStr))
