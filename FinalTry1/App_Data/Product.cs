@@ -26,7 +26,7 @@ namespace FinalTry1
     }
     public class OtterBoxSales
     {
-            public int ID { get; set; }
+         public int ID { get; set; }
         public string OtterBoxModel{get;set;}
         public string Type { get; set; }
         public string Color { get; set; }
