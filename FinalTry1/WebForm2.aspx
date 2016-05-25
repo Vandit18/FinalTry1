@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="FinalTry1.WebForm2" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="FinalTry1.Product" DeleteMethod="DeleteProduct" InsertMethod="AddProduct" SelectMethod="getProducts" TypeName="FinalTry1.ProductProvider" UpdateMethod="UpdateProduct"></asp:ObjectDataSource>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" BackColor="White" BorderColor="#CCCCCC" BorderWidth="1px" CellPadding="3" DataSourceID="ObjectDataSource1" PageSize="5" BorderStyle="None" Width="532px">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" BackColor="White" BorderColor="#CCCCCC" BorderWidth="1px" CellPadding="3" DataSourceID="ObjectDataSource1" PageSize="5" BorderStyle="None" Width="532px" HorizontalAlign="Center">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>

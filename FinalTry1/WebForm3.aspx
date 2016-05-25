@@ -2,11 +2,63 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
     <h1>
-        OtterBoxSalesHistory
+        OtterBox Sales History
     </h1>
 </div>
+
+    <div>
+        <table>
+        <tr>
+            <td class="td">OtterBox:</td>
+            <td>
+                <asp:TextBox ID="txtOtterBox" runat="server"></asp:TextBox></td>
+            <td>
+                <asp:Label ID="OtterBox" runat="server" Visible="false"></asp:Label>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="td">Type:</td>
+            <td>
+                <asp:TextBox ID="txtType" runat="server"></asp:TextBox></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="td">Color:</td>
+            <td>
+                <asp:TextBox ID="txtColor" runat="server"></asp:TextBox></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="td">InStock</td>
+            <td>
+                <asp:TextBox ID="txtInStock" runat="server"></asp:TextBox></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="td">Sold</td>
+            <td>
+                <asp:TextBox ID="txtSold" runat="server"></asp:TextBox></td>
+            <td>&nbsp;</td>
+        </tr>
+            <tr>
+            <td class="td">ModelInStock</td>
+            <td>
+                <asp:TextBox ID="txtModelInStock" runat="server"></asp:TextBox></td>
+            <td>&nbsp;</td>
+        </tr>
+         <tr>
+            <td></td>
+            <td>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+              </td>
+            <td></td>
+        </tr>
+    </table>
+
+    </div>
+
+
     <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" DataObjectTypeName="FinalTry1.OtterBoxSales" DeleteMethod="DeleteProduct" InsertMethod="AddProduct" SelectMethod="getProducts" TypeName="FinalTry1.OtterBoxSalesHistory" UpdateMethod="UpdateProduct"></asp:ObjectDataSource>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1" ForeColor="Black" GridLines="Vertical" PageSize="5">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="ObjectDataSource1" ForeColor="Black" GridLines="Vertical" PageSize="5" HorizontalAlign="Center">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
